@@ -3,14 +3,15 @@ Summary:	Getopt-Declare perl module
 Summary(pl):	Modu³ perla Getopt-Declare
 Name:		perl-Getopt-Declare
 Version:	1.08
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Getopt/Getopt-Declare-%{version}.tar.gz
-Patch0:		perl-Getopt-Declare-paths.patch
+Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Parse-RecDescent
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -34,31 +35,20 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install demo* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
+install demo* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Getopt/Declare
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        Changes README
+gzip -9nf Changes README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {Changes,README}.gz
-
+%doc *.gz
 %{perl_sitelib}/Getopt/Declare.pm
-%{perl_sitearch}/auto/Getopt/Declare
-
 %{_mandir}/man3/*
-
-%{_prefix}/src/examples/%{name}
+%{_examplesdir}/%{name}-%{version}
