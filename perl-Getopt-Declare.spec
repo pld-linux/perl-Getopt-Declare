@@ -2,9 +2,9 @@
 Summary:	Getopt-Declare perl module
 Summary(pl):	Modu³ perla Getopt-Declare
 Name:		perl-Getopt-Declare
-Version:	1.07
-Release:	3
-Copyright:	GPL
+Version:	1.08
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Getopt/Getopt-Declare-%{version}.tar.gz
@@ -34,11 +34,11 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
-install demo* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install demo* $RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Getopt/Declare
@@ -61,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-/usr/src/examples/%{name}-%{version}
+/usr/src/examples/%{name}
