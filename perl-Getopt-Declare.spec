@@ -27,7 +27,7 @@ is specifically designed to be powerful but exceptionally easy to use.
 
 %description -l pl
 Getopt::Declare jest jeszcze jednym parserem argumentów linii poleceñ,
-o wielkich mozliwo¶ciach, a jednocze¶nie wyj±tkowo ³atwym w u¿yciu.
+o wielkich mo¿liwo¶ciach, a jednocze¶nie wyj±tkowo ³atwym w u¿yciu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
