@@ -7,8 +7,8 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Getopt/Getopt-Declare-%{version}.tar.gz
-Patch:		perl-Getopt-Declare-paths.patch
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Getopt/Getopt-Declare-%{version}.tar.gz
+Patch0:		perl-Getopt-Declare-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-Parse-RecDescent
@@ -17,8 +17,8 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Getopt-Declare is yet another command-line argument parser, one which 
-is specifically designed to be powerful but exceptionally easy to use. 
+Getopt-Declare is yet another command-line argument parser, one which
+is specifically designed to be powerful but exceptionally easy to use.
 
 %description -l pl
 Getopt-Declare jest jeszcze jednym parserem argumentów linii poleceñ,
@@ -34,11 +34,11 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}
+install -d $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
-install demo* $RPM_BUILD_ROOT/usr/src/examples/%{name}
+install demo* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Getopt/Declare
@@ -61,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-/usr/src/examples/%{name}
+%{_prefix}/src/examples/%{name}
