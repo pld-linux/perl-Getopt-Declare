@@ -3,7 +3,7 @@ Summary:	Getopt-Declare perl module
 Summary(pl):	Modu³ perla Getopt-Declare
 Name:		perl-Getopt-Declare
 Version:	1.08
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
