@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Getopt
-%define	pnam	Declare
+%define		pdir	Getopt
+%define		pnam	Declare
 Summary:	Getopt::Declare - Declaratively Expressed Command-Line Arguments via Regular Expressions
 Summary(pl):	Getopt::Declare - wyra¿one deklaracyjnie przez wyra¿enia regularne argumenty linii polecenia
 Name:		perl-Getopt-Declare
