@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	Declare
-%include	/usr/lib/rpm/macros.perl
 Summary:	Getopt-Declare perl module
 Summary(pl):	Modu³ perla Getopt-Declare
 Name:		perl-Getopt-Declare
 Version:	1.09
-Release:	3
-
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -26,7 +25,7 @@ Getopt-Declare jest jeszcze jednym parserem argumentów linii poleceñ,
 o wielkich mozliwo¶ciach, a jednocze¶nie wyj±tkowo ³atwym w u¿yciu.
 
 %prep
-%setup -q -n Getopt-Declare-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
 
 %build
