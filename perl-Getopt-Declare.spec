@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	Declare
-Summary:	Getopt-Declare perl module
-Summary(pl):	Modu³ perla Getopt-Declare
+Summary:	Getopt::Declare perl module
+Summary(pl):	Modu³ perla Getopt::Declare
 Name:		perl-Getopt-Declare
 Version:	1.09
 Release:	4
@@ -17,11 +17,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Getopt-Declare is yet another command-line argument parser, one which
+Getopt::Declare is yet another command-line argument parser, one which
 is specifically designed to be powerful but exceptionally easy to use.
 
 %description -l pl
-Getopt-Declare jest jeszcze jednym parserem argumentów linii poleceñ,
+Getopt::Declare jest jeszcze jednym parserem argumentów linii poleceñ,
 o wielkich mozliwo¶ciach, a jednocze¶nie wyj±tkowo ³atwym w u¿yciu.
 
 %prep
