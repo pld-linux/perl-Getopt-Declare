@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	Declare
-Summary:	Getopt::Declare perl module
-Summary(pl):	Modu³ perla Getopt::Declare
+Summary:	Getopt::Declare - Declaratively Expressed Command-Line Arguments via Regular Expressions
+Summary(pl):	Getopt::Declare - wyra¿one deklaracyjnie przez wyra¿enia regularne argumenty linii polecenia
 Name:		perl-Getopt-Declare
 Version:	1.11
 Release:	1
