@@ -11,7 +11,7 @@ Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Getopt/Getopt-Declare-%{v
 Patch:		perl-Getopt-Declare-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
-BuildRequires:	perl-Text-Balanced
+BuildRequires:	perl-Parse-RecDescent
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
