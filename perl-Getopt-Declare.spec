@@ -4,12 +4,12 @@
 Summary:	Getopt::Declare perl module
 Summary(pl):	Modu³ perla Getopt::Declare
 Name:		perl-Getopt-Declare
-Version:	1.09
-Release:	5
+Version:	1.11
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9b1dbe84adb34534e7986e0b5b7fdcf0
+# Source0-md5:	2bbc6f770af28d5b9511be071a9ab03e
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
