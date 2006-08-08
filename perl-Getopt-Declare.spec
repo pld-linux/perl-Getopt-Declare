@@ -31,7 +31,7 @@ o wielkich mo¿liwo¶ciach, a jednocze¶nie wyj±tkowo ³atwym w u¿yciu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -p1
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
