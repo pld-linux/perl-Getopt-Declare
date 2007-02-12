@@ -6,7 +6,7 @@
 %define		pdir	Getopt
 %define		pnam	Declare
 Summary:	Getopt::Declare - Declaratively Expressed Command-Line Arguments via Regular Expressions
-Summary(pl):	Getopt::Declare - wyraøone deklaracyjnie przez wyraøenia regularne argumenty linii polecenia
+Summary(pl.UTF-8):   Getopt::Declare - wyra≈ºone deklaracyjnie przez wyra≈ºenia regularne argumenty linii polecenia
 Name:		perl-Getopt-Declare
 Version:	1.11
 Release:	1
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Getopt::Declare is yet another command-line argument parser, one which
 is specifically designed to be powerful but exceptionally easy to use.
 
-%description -l pl
-Getopt::Declare jest jeszcze jednym parserem argumentÛw linii poleceÒ,
-o wielkich moøliwo∂ciach, a jednocze∂nie wyj±tkowo ≥atwym w uøyciu.
+%description -l pl.UTF-8
+Getopt::Declare jest jeszcze jednym parserem argument√≥w linii polece≈Ñ,
+o wielkich mo≈ºliwo≈õciach, a jednocze≈õnie wyjƒÖtkowo ≈Çatwym w u≈ºyciu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
