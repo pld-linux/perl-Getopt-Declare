@@ -6,7 +6,7 @@
 %define		pdir	Getopt
 %define		pnam	Declare
 Summary:	Getopt::Declare - Declaratively Expressed Command-Line Arguments via Regular Expressions
-Summary(pl.UTF-8):   Getopt::Declare - wyrażone deklaracyjnie przez wyrażenia regularne argumenty linii polecenia
+Summary(pl.UTF-8):	Getopt::Declare - wyrażone deklaracyjnie przez wyrażenia regularne argumenty linii polecenia
 Name:		perl-Getopt-Declare
 Version:	1.11
 Release:	1
