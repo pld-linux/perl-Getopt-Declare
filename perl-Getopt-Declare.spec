@@ -9,7 +9,7 @@ Summary:	Getopt::Declare - Declaratively Expressed Command-Line Arguments via Re
 Summary(pl.UTF-8):	Getopt::Declare - wyrażone deklaracyjnie przez wyrażenia regularne argumenty linii polecenia
 Name:		perl-Getopt-Declare
 Version:	1.11
-Release:	1
+Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
