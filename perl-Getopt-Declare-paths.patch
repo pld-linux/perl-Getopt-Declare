@@ -1,31 +1,31 @@
---- Getopt-Declare-1.07/demo_cmdline	Sat Dec  5 02:58:42 1998
-+++ Getopt-Declare-1.07.new/demo_cmdline	Sat Oct  9 16:32:23 1999
+--- Getopt-Declare-1.07/demos/demo_cmdline	Sat Dec  5 02:58:42 1998
++++ Getopt-Declare-1.07/demos/demo_cmdline	Sat Oct  9 16:32:23 1999
 @@ -1,4 +1,4 @@
--#! /usr/local/bin/perl -w
+-#!/usr/bin/env perl
 +#!/usr/bin/perl -w
  
  use Getopt::Declare;
  
---- Getopt-Declare-1.07/demo_csv	Wed Apr 15 22:22:08 1998
-+++ Getopt-Declare-1.07.new/demo_csv	Sat Oct  9 16:32:07 1999
+--- Getopt-Declare-1.07/demos/demo_csv	Wed Apr 15 22:22:08 1998
++++ Getopt-Declare-1.07/demos/demo_csv	Sat Oct  9 16:32:07 1999
 @@ -1,4 +1,4 @@
--#!/usr/local/bin/perl -w
+-#!/usr/bin/env perl
 +#!/usr/bin/perl -w
  
  
  use Getopt::Declare;
---- Getopt-Declare-1.07/demo_interp	Fri Apr 24 06:36:03 1998
-+++ Getopt-Declare-1.07.new/demo_interp	Sat Oct  9 16:32:13 1999
+--- Getopt-Declare-1.07/demos/demo_interp	Fri Apr 24 06:36:03 1998
++++ Getopt-Declare-1.07/demos/demo_interp	Sat Oct  9 16:32:13 1999
 @@ -1,4 +1,4 @@
--#!/usr/local/bin/perl -w
+-#!/usr/bin/env perl
 +#!/usr/bin/perl -w
  
  use Getopt::Declare;
  use vars qw{ $name $result $n };
---- Getopt-Declare-1.07/demo_shell	Fri Apr 24 05:49:26 1998
-+++ Getopt-Declare-1.07.new/demo_shell	Sat Oct  9 16:32:18 1999
+--- Getopt-Declare-1.07/demos/demo_shell	Fri Apr 24 05:49:26 1998
++++ Getopt-Declare-1.07/demos/demo_shell	Sat Oct  9 16:32:18 1999
 @@ -1,4 +1,4 @@
--#!/usr/local/bin/perl -w
+-#!/usr/bin/env perl
 +#!/usr/bin/perl -w
  
  

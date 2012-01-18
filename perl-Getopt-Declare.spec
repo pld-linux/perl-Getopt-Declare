@@ -8,12 +8,12 @@
 Summary:	Getopt::Declare - Declaratively Expressed Command-Line Arguments via Regular Expressions
 Summary(pl.UTF-8):	Getopt::Declare - wyrażone deklaracyjnie przez wyrażenia regularne argumenty linii polecenia
 Name:		perl-Getopt-Declare
-Version:	1.12
+Version:	1.14
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e11f07f2ece714374f3b45ec68227908
+# Source0-md5:	7ed52d0279abcb34c366369af8ac8cb8
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -47,7 +47,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install demo* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+install demos/demo* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
